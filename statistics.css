@@ -1,0 +1,157 @@
+*{
+    margin:       0;
+    padding:     0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#navbar_div {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    background: rgb(53, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+#logo{
+    width: 16%;
+}
+
+.items{
+    color: white;
+    padding: 5px;
+}
+img {
+    width: 300px;
+}
+
+.items:hover {                  /* pseudoclass */
+    background-color: gray;
+    opacity: 0.5;
+}
+#current:hover{
+    background-color: green;
+}
+
+a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+#granim-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#selection{
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-family: sans-serif;
+}
+#span{
+    margin-bottom: 10px;
+}
+#typed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection_sub {
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 20vh;
+    transition: all 2s ease-in-out;
+}
+#selection_sub:hover{
+    transform: scale(1.1);
+}
+#options{
+    margin-bottom: 15px;
+    width: 120px;
+    height: 20%;
+}
+#submit{
+    width: 120px;
+}
+#information{
+    outline: 5px solid white;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#date{
+    padding: 20px;
+    text-align: center;
+}
+#date p{
+    display: inline;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.stats{
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.stats p{
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+}
+#rate_mortality{
+    text-align: center
+}
+
+#rate_mortality p{
+    display: inline;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#risk_level{
+    background-color: white;
+    margin-bottom: 20px;
+}
+#risk_level p{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#commentary{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#commentary p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#granim-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+
+

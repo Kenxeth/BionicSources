@@ -1,0 +1,85 @@
+#navbar_div {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    background: rgb(53, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    line-height: 50px;
+}
+#logo{
+    width: 16%;
+}
+.items{
+    color: white;
+    padding: 5px;
+}
+img {
+    width: 300px;
+}
+.items:hover {                  /* pseudoclass */
+    background-color: gray;
+    opacity: 0.5;
+}
+#current:hover{
+    background-color: green;
+}
+a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+#granim-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#Home h1{
+    color:white;
+    font-size: 100px;
+}
+#Home p{ /* This is basically saying that the p tag inside #Home gets the flex property, the parents does not*/
+    color: white;
+    font-size: 30px;
+    /* margin: 100px; */
+}
+#Home{
+    display:flex;
+    flex-direction:column; /*makes items in flex appear in column */
+    align-items: center; /centers item if in column, justify-content otherwise/
+    text-align:center;
+}
+#photo_1 {
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#photo_2 {
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+}
+#photo_3 {
+    width:400px;
+    height:auto;
+    margin-top: 60px;
+}
+
+#photo_4 {
+    width:auto;
+    height:auto;
+    margin-top: 60px;
+}
+@media only screen and (max-width: 600px) {
+    #photo_1, #photo_2, #photo_3 {
+        width: 200px;
+        height: 200px;
+    }
+    #Home p{
+        font-size: 25px;
+    }
+}

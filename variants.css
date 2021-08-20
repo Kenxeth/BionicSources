@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* navbar stuff  */
+#text{
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+*{
+    margin:       0;
+    padding:     0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#navbar_div {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    background: rgb(53, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    line-height: 50px;
+}
+#logo{
+    width: 16%;
+}
+.items{
+    color: white;
+    padding: 5px;
+}
+img {
+    width: 300px;
+}
+
+.items:hover {                  /* pseudoclass */
+    background-color: gray;
+    opacity: 0.5;
+}
+
+a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+#current:hover{
+    background-color: green;
+}
+#granim-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.span{
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span span{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: black;
+}
+.info{
+    margin-bottom: 10px;
+}
+ul li{
+    display: list-item;
+}
+.img{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.img img{
+    width: 40%;
+    border-radius: 20px;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: zoomInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#photo_2 {
+    height: 200px;
+    width: 200px;   
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes zoomInAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+    35% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+@media(max-width: 1000px){
+    .img img{
+        width: 70%;
+    }
+}
+.info p, .info ul, .info li{
+    font-size: 22px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+@media(max-width:363px){
+    .items{
+        font-size: 12px;
+    }
+}
+
+a{
+    text-decoration: underline;
+}

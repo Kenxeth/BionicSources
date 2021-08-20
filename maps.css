@@ -1,0 +1,46 @@
+/* background stuff  */
+#granim-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar_div {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    background: rgb(53, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+#logo{
+    width: 16%;
+}
+
+.items{
+    color: white;
+    padding: 5px;
+}
+img {
+    width: 300px;
+}
+
+.items:hover {                  /* pseudoclass */
+    background-color: gray;
+    opacity: 0.5;
+}
+#current:hover{
+    background-color: green;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

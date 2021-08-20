@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="maps.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="maps.js" defer></script>
+</head>
+<body>
+    <canvas id="granim-canvas"></canvas>
+    <!-- navbar -->
+    <div id="navbar_div">
+        <img id="logo" src="images/logo.PNG">
+        <a href="index.html"><div class="items"> Covid </div></a>
+        <a href="chat.html"><div class="items">Chat</div></a>
+        <a href="vaccine.html"><div class="items">Vaccine </div></a>
+        <a href="statistics.html"><div class="items">Statistics</div></a>
+        <a href="variants.html"><div class="items">Variants</div></a>
+        <a id="current"><div class="items">Maps</div></a>
+        
+   </div>
+<!-- Home Page -->
+        
+    </div> 
+    
+    <h3>Find The Nearest Hospital Near You!</h3>
+    <p> With this added feature you can see all the avaliable hospital centers near you. 
+    </p>
+
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5TYxI5yg7zRiJKWGyqm7P3a7ubq2ngUg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+ 
+</body>
+</html>

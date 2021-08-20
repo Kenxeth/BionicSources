@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="statistics.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="statistics.js" defer></script>
+</head>
+<body>
+    <canvas id="granim-canvas"></canvas>
+        <div id="navbar_div">
+        <img id="logo" src="images/logo.PNG">
+        <a href="index.html"><div class="items">Covid</div></a>
+        <a href="chat.html"><div class="items">Chat 
+        </div></a>
+        <a href="vaccine.html"><div class="items">Vaccine</div></a>
+        <a id = "current"><div class="items">Statistics</div></a>
+        <a href="variants.html"><div class="items">Variants</div></a>
+        <a href="maps.html"><div class="items">Maps</div></a>
+    </div>
+    <div id="selection">
+        <div id = "selection_sub">
+            <div id="typed">
+                <p>Please choose a State below:</p>
+            </div>
+            <div id="span">
+                <span id="typed_1"></span>
+            </div>
+            <select id = "options">
+                <option value="AL">AL</option>
+    <option value="AK">AK</option>
+    <option value="AZ">AZ</option>
+    <option value="AR">AR</option>
+    <option value="CA">CA</option>
+    <option value="CO">CO</option>
+    <option value="CT">CT</option>
+    <option value="DE">DE</option>
+    <option value="DC">DC</option>
+    <option value="GA">GA</option>
+    <option value="HI">HI</option>
+    <option value="ID">ID</option>
+    <option value="IL">IL</option>
+    <option value="IN">IN</option>
+    <option value="IA">IA</option>
+    <option value="KS">KS</option>
+    <option value="KY">KY</option>
+    <option value="LA">LA</option>
+    <option value="ME">ME</option>
+    <option value="MD">MD</option>
+    <option value="MA">MA</option>
+    <option value="MI">MI</option>
+    <option value="MN">MN</option>
+    <option value="MS">MS</option>
+    <option value="MO">MO</option>
+    <option value="MT">MT</option>
+    <option value="NE">NE</option>
+    <option value="NV">NV</option>
+    <option value="NH">NH</option>
+    <option value="NJ">NJ</option>
+    <option value="NM">NM</option>
+    <option value="NY">NY</option>
+    <option value="NC">NC</option>
+    <option value="ND">ND</option>
+    <option value="OH">OH</option>
+    <option value="OK">OK</option>
+    <option value="OR">OR</option>
+    <option value="PA">PA</option>
+    <option value="RI">RI</option>
+    <option value="SC">SC</option>
+    <option value="SD">SD</option>
+    <option value="TN">TN</option>
+    <option value="TX">TX</option>
+    <option value="UT">UT</option>
+    <option value="VT">VT</option>
+    <option value="VA">VA</option>
+    <option value="WA">WA</option>
+    <option value="WV">WV</option>
+    <option value="WI">WI</option>
+    <option value="WY">WY</option>
+            </select>
+            <button id="submit">Submit</button>
+    </div>
+</div>
+<div id = "information">
+<div id="date"><p>Most Recent update: </p></div>
+<div id = "cases" class = "stats"><p>Total number of cases: </p></div>
+<div id="deaths" class = "stats"><p>Total number of deaths: </p></div>
+<div id="cases_new" class = "stats"><p>Increase in cases: </p></div>
+<div id="deaths_new" class = "stats"><p>Increase in deaths: </p></div>
+<div id = "rate_mortality"><p>Instantaneous mortality rate: </p></div>
+<div id = "risk_level"><p>Your Risk Level: </p></div>
+<div id = "commentary"></div>
+<div id="vaccines_administered" class = "stats"><p>Number of Vaccinations Administered: </p></div>
+<div id="vaccines_distributed" class = "stats"><p>Number of distributed vaccines: </p></div>
+</div>
+    </body>
+</html>
