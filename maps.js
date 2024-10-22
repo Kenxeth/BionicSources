@@ -43,7 +43,7 @@ async function getNearbyPlaces(lat, lng) {
 
     //Easier, more organized way to add URL Parameters to API request
     const options = new URLSearchParams({
-        key: "AIzaSyD5TYxI5yg7zRiJKWGyqm7P3a7ubq2ngUg",
+        key: "keyIsHidden",
         radius: 16000, //Radius in meters. Basically, how far you want to look for places. So, I want to look as far as 16K meters for places
         location: lat + "," + lng, //latitute, longitude e.g. 40,-79
         keyword: "Hospitals" // Place search term. Could be something like "Rehab Center", "Recycling Centers", "Arcade", etc
